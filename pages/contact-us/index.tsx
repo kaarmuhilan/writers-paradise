@@ -1,5 +1,7 @@
 import { NextPage } from "next";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import NextLink from "next/link";
+import NextImage from "next/image";
 
 type Props = {};
 
@@ -40,12 +42,11 @@ const IndexPage: NextPage<Props> = ({}) => {
                     />
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <a
-                      href="https://mail.google.com/mail/?view=cm&source=mailto&to=thewritersparadise.official@gmail.com"
-                      target="_blank"
-                    >
-                      <p>thewritersparadise.official@gmail.com</p>
-                    </a>
+                    <NextLink href="https://mail.google.com/mail/?view=cm&source=mailto&to=thewritersparadise.official@gmail.com">
+                      <a rel="noreferrer" target="_blank">
+                        <p>thewritersparadise.official@gmail.com</p>
+                      </a>
+                    </NextLink>
                   </div>
                 </div>
               </div>
@@ -82,12 +83,11 @@ const IndexPage: NextPage<Props> = ({}) => {
                     />
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <a
-                      href="https://mail.google.com/mail/?view=cm&source=mailto&to=thewritersparadise.official@gmail.com"
-                      target="_blank"
-                    >
-                      <p>thewritersparadise.official@gmail.com</p>
-                    </a>
+                    <NextLink href="https://mail.google.com/mail/?view=cm&source=mailto&to=thewritersparadise.official@gmail.com">
+                      <a rel="noreferrer" target="_blank">
+                        <p>thewritersparadise.official@gmail.com</p>
+                      </a>
+                    </NextLink>
                   </div>
                 </div>
               </div>

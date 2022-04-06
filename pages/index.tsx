@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import MobileHeaderComponent from "@/components/layout/mobile-header.component";
 import HeaderComponent from "@/components/layout/header.component";
 import FooterComponent from "@/components/layout/footer.component";
+import NextLink from "next/link";
+import NextImage from "next/image";
 
 const testimonials = [
   {
@@ -134,7 +136,7 @@ export default function Example() {
         >
           <div className="flex-1 relative w-full bg-gray-800">
             <div className="absolute inset-0 overflow-hidden">
-              <img
+              <NextImage
                 src="https://tailwindui.com/img/ecommerce-images/home-page-04-hero-full-width.jpg"
                 alt=""
                 className="w-full h-full object-center object-cover"
@@ -152,13 +154,7 @@ export default function Example() {
             className="absolute inset-0 flex flex-col sm:hidden"
           >
             <div className="flex-1 relative w-full bg-gray-800">
-              <div className="absolute inset-0 overflow-hidden">
-                {/* <img
-                    src="assets/images/back-image.jpg"
-                    alt=""
-                    className="w-full h-full object-center object-cover"
-                  /> */}
-              </div>
+              <div className="absolute inset-0 overflow-hidden"></div>
               <div className="absolute inset-0 bg-gray-900 opacity-50" />
             </div>
             <div className="w-full bg-white h-48" />
@@ -197,7 +193,7 @@ export default function Example() {
                     className="absolute inset-0 rounded-lg overflow-hidden"
                   >
                     <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
-                      <img
+                      <NextImage
                         src={collection.imageSrc}
                         alt={collection.imageAlt}
                         className="w-full h-full object-center object-cover"
@@ -208,10 +204,12 @@ export default function Example() {
                   <div className="absolute inset-0 rounded-lg p-6 flex items-end">
                     <div>
                       <h3 className="mt-1 font-semibold text-white">
-                        <a target="_blank" href={collection.href}>
-                          <span className="absolute inset-0" />
-                          {collection.name}
-                        </a>
+                        <NextLink href={collection.href}>
+                          <a target="_blank">
+                            <span className="absolute inset-0" />
+                            {collection.name}
+                          </a>
+                        </NextLink>
                       </h3>
                       <p aria-hidden="true" className="text-sm text-white">
                         {collection.author}
@@ -242,7 +240,7 @@ export default function Example() {
               >
                 <div className="md:flex-shrink-0">
                   <div className="flow-root">
-                    <img
+                    <NextImage
                       className="-my-1 h-24 w-auto mx-auto"
                       src={perk.imageUrl}
                       alt=""

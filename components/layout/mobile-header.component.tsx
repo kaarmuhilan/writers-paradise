@@ -3,6 +3,8 @@ import { XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import { classNames } from "@/utility/css-helper";
 import { navigation, pages } from "@/static/layout.data";
+import NextLink from "next/link";
+import NextImage from "next/image";
 
 type Props = {
   open: boolean;
@@ -81,22 +83,22 @@ const MobileHeaderComponent: React.FC<Props> = ({ open, setOpen }) => {
                       {category.featured.map((item) => (
                         <div key={item.name} className="group relative">
                           <div className="aspect-w-1 aspect-h-1 rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
-                            <img
-                              src={item.imageSrc}
+                            <NextImage
                               alt={item.imageAlt}
                               className="object-center object-cover"
-                            />
+                              src={item.imageSrc}
+                            ></NextImage>
                           </div>
-                          <a
-                            href={item.href}
-                            className="mt-6 block text-sm font-medium text-gray-900"
-                          >
-                            <span
-                              className="absolute z-10 inset-0"
-                              aria-hidden="true"
-                            />
-                            {item.name}
-                          </a>
+                          <NextLink href={item.href}>
+                            <a className="mt-6 block text-sm font-medium text-gray-900">
+                              <span
+                                className="absolute z-10 inset-0"
+                                aria-hidden="true"
+                              />
+                              {item.name}
+                            </a>
+                          </NextLink>
+
                           <p
                             aria-hidden="true"
                             className="mt-1 text-sm text-gray-500"
@@ -114,12 +116,11 @@ const MobileHeaderComponent: React.FC<Props> = ({ open, setOpen }) => {
             <div className="border-t border-gray-200 py-6 px-4 space-y-6">
               {pages.map((page) => (
                 <div key={page.name} className="flow-root">
-                  <a
-                    href={page.href}
-                    className="-m-2 p-2 block font-medium text-gray-900"
-                  >
-                    {page.name}
-                  </a>
+                  <NextLink href={page.href}>
+                    <a className="-m-2 p-2 block font-medium text-gray-900">
+                      {page.name}
+                    </a>
+                  </NextLink>
                 </div>
               ))}
             </div>

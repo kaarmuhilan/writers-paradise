@@ -1,5 +1,7 @@
 import { classNames } from "@/utility/css-helper";
 import { NextPage } from "next";
+import NextLink from "next/link";
+import NextImage from "next/image";
 
 type Props = {};
 const products = [
@@ -55,11 +57,11 @@ const IndexPage: NextPage<Props> = ({}) => {
             <div key={product.id}>
               <div className="relative">
                 <div className="relative w-full h-72 rounded-lg overflow-hidden">
-                  <img
+                  <NextImage
                     src={product.imageSrc}
                     alt={product.imageAlt}
                     className="w-full h-full object-center object-cover"
-                  />
+                  ></NextImage>
                 </div>
                 <div className="relative mt-4">
                   <h3 className="text-sm font-medium text-gray-900">
@@ -80,12 +82,12 @@ const IndexPage: NextPage<Props> = ({}) => {
                 </div>
               </div>
               <div className="mt-6">
-                <a
-                  href={product.href}
-                  className="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200"
-                >
-                  Go to Details<span className="sr-only">, {product.name}</span>
-                </a>
+                <NextLink href={product.href}>
+                  <a className="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">
+                    Go to Details
+                    <span className="sr-only">, {product.name}</span>
+                  </a>
+                </NextLink>
               </div>
             </div>
           ))}

@@ -4,6 +4,8 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, SearchIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import { useRouter } from "next/router";
+import NextLink from "next/link";
+import NextImage from "next/image";
 
 type Props = {
   setOpen: (value: boolean) => void;
@@ -22,14 +24,16 @@ const HeaderComponent: React.FC<Props> = ({ setOpen }) => {
             <div className="h-16 flex items-center justify-between">
               {/* Logo (lg+) */}
               <div className="hidden lg:flex-1 lg:flex lg:items-center">
-                <a href="/">
-                  <span className="sr-only">Workflow</span>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                    alt=""
-                  />
-                </a>
+                <NextLink href="#">
+                  <>
+                    <span className="sr-only">Workflow</span>
+                    <NextImage
+                      src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
+                      alt=""
+                      className="h-8 w-auto"
+                    ></NextImage>
+                  </>
+                </NextLink>
               </div>
 
               <div className="hidden h-full lg:flex">
@@ -97,22 +101,21 @@ const HeaderComponent: React.FC<Props> = ({ setOpen }) => {
                                           className="group relative"
                                         >
                                           <div className="aspect-w-1 aspect-h-1 rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
-                                            <img
+                                            <NextImage
                                               src={item.imageSrc}
                                               alt={item.imageAlt}
                                               className="object-center object-cover"
-                                            />
+                                            ></NextImage>
                                           </div>
-                                          <a
-                                            href={item.href}
-                                            className="mt-4 block font-medium text-gray-900"
-                                          >
-                                            <span
-                                              className="absolute z-10 inset-0"
-                                              aria-hidden="true"
-                                            />
-                                            {item.name}
-                                          </a>
+                                          <NextLink href={item.href}>
+                                            <a className="mt-4 block font-medium text-gray-900">
+                                              <span
+                                                className="absolute z-10 inset-0"
+                                                aria-hidden="true"
+                                              />
+                                              {item.name}
+                                            </a>
+                                          </NextLink>
                                           <p
                                             aria-hidden="true"
                                             className="mt-1"
@@ -132,13 +135,11 @@ const HeaderComponent: React.FC<Props> = ({ setOpen }) => {
                     ))}
 
                     {pages.map((page) => (
-                      <a
-                        key={page.name}
-                        href={page.href}
-                        className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                      >
-                        {page.name}
-                      </a>
+                      <NextLink href={page.href} key={page.name}>
+                        <a className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">
+                          {page.name}
+                        </a>
+                      </NextLink>
                     ))}
                   </div>
                 </Popover.Group>
@@ -156,13 +157,12 @@ const HeaderComponent: React.FC<Props> = ({ setOpen }) => {
                 </button>
 
                 {/* Search */}
-                <a
-                  href="#"
-                  className="ml-2 p-2 text-gray-400 hover:text-gray-500"
-                >
-                  <span className="sr-only">Search</span>
-                  <SearchIcon className="w-6 h-6" aria-hidden="true" />
-                </a>
+                <NextLink href="#">
+                  <a className="ml-2 p-2 text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Search</span>
+                    <SearchIcon className="w-6 h-6" aria-hidden="true" />
+                  </a>
+                </NextLink>
               </div>
             </div>
           </div>
