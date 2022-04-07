@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import NextLink from "next/link";
-import NextImage from "next/image";
+import Image from "next/image";
 
 type Props = {};
 

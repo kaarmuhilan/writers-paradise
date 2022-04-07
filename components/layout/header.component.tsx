@@ -5,7 +5,7 @@ import { MenuIcon, SearchIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
-import NextImage from "next/image";
+import Image from "next/image";
 
 type Props = {
   setOpen: (value: boolean) => void;
@@ -27,11 +27,13 @@ const HeaderComponent: React.FC<Props> = ({ setOpen }) => {
                 <NextLink href="#">
                   <>
                     <span className="sr-only">Workflow</span>
-                    <NextImage
+                    <Image
                       src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
                       alt=""
+                      width="200px"
+                      height="200px"
                       className="h-8 w-auto"
-                    ></NextImage>
+                    ></Image>
                   </>
                 </NextLink>
               </div>
@@ -101,11 +103,11 @@ const HeaderComponent: React.FC<Props> = ({ setOpen }) => {
                                           className="group relative"
                                         >
                                           <div className="aspect-w-1 aspect-h-1 rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
-                                            <NextImage
+                                            <Image
                                               src={item.imageSrc}
                                               alt={item.imageAlt}
                                               className="object-center object-cover"
-                                            ></NextImage>
+                                            ></Image>
                                           </div>
                                           <NextLink href={item.href}>
                                             <a className="mt-4 block font-medium text-gray-900">

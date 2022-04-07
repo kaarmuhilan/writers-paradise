@@ -1,7 +1,7 @@
 import { classNames } from "@/utility/css-helper";
 import { NextPage } from "next";
 import NextLink from "next/link";
-import NextImage from "next/image";
+import Image from "next/image";
 
 type Props = {};
 const products = [
@@ -57,11 +57,12 @@ const IndexPage: NextPage<Props> = ({}) => {
             <div key={product.id}>
               <div className="relative">
                 <div className="relative w-full h-72 rounded-lg overflow-hidden">
-                  <NextImage
+                  <Image
                     src={product.imageSrc}
                     alt={product.imageAlt}
+                    layout="fill"
                     className="w-full h-full object-center object-cover"
-                  ></NextImage>
+                  ></Image>
                 </div>
                 <div className="relative mt-4">
                   <h3 className="text-sm font-medium text-gray-900">

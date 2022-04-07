@@ -2,7 +2,7 @@ import { classNames } from "@/utility/css-helper";
 import { NextPage } from "next";
 import { CheckIcon } from "@heroicons/react/solid";
 import NextLink from "next/link";
-import NextImage from "next/image";
+import Image from "next/image";
 
 type Props = {};
 const steps = [

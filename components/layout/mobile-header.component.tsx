@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import { classNames } from "@/utility/css-helper";
 import { navigation, pages } from "@/static/layout.data";
 import NextLink from "next/link";
-import NextImage from "next/image";
+import Image from "next/image";
 
 type Props = {
   open: boolean;
@@ -83,11 +83,11 @@ const MobileHeaderComponent: React.FC<Props> = ({ open, setOpen }) => {
                       {category.featured.map((item) => (
                         <div key={item.name} className="group relative">
                           <div className="aspect-w-1 aspect-h-1 rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
-                            <NextImage
+                            <Image
                               alt={item.imageAlt}
                               className="object-center object-cover"
                               src={item.imageSrc}
-                            ></NextImage>
+                            ></Image>
                           </div>
                           <NextLink href={item.href}>
                             <a className="mt-6 block text-sm font-medium text-gray-900">

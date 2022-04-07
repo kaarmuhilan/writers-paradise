@@ -1,7 +1,7 @@
 // import { stats } from "@/static/about.data";
 import { NextPage } from "next";
 import NextLink from "next/link";
-import NextImage from "next/image";
+import Image from "next/image";
 
 type Props = {};
 
@@ -113,11 +113,12 @@ const IndexPage: NextPage<Props> = ({}) => {
               </svg>
               <blockquote className="relative bg-white rounded-lg shadow-lg">
                 <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
-                  <NextImage
+                  <Image
                     className="h-8"
                     alt="Workcation"
+                    layout="fill"
                     src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
-                  ></NextImage>
+                  ></Image>
 
                   <div className="relative text-lg text-gray-700 font-medium mt-8">
                     <svg
@@ -138,11 +139,12 @@ const IndexPage: NextPage<Props> = ({}) => {
                 </div>
                 <cite className="relative flex items-center sm:items-start bg-indigo-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
                   <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
-                    <NextImage
+                    <Image
                       className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-indigo-300"
                       alt=""
+                      layout="fill"
                       src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80"
-                    ></NextImage>
+                    ></Image>
                   </div>
                   <span className="relative ml-4 text-indigo-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
                     <p className="text-white font-semibold sm:inline">
@@ -200,21 +202,23 @@ const IndexPage: NextPage<Props> = ({}) => {
             <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
               {/* Testimonial card*/}
               <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
-                <NextImage
+                <Image
                   className="absolute inset-0 h-full w-full object-cover"
                   alt=""
+                  layout="fill"
                   src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
-                ></NextImage>
+                ></Image>
 
                 <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
                 <div className="relative px-8">
                   <div>
-                    <NextImage
+                    <Image
                       className="h-12"
                       alt="Workcation"
+                      layout="fill"
                       src="https://tailwindui.com/img/logos/workcation.svg?color=white"
-                    ></NextImage>
+                    ></Image>
                   </div>
                   <blockquote className="mt-8">
                     <div className="relative text-lg font-medium text-white md:flex-grow">

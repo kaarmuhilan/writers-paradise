@@ -4,7 +4,7 @@ import MobileHeaderComponent from "@/components/layout/mobile-header.component";
 import HeaderComponent from "@/components/layout/header.component";
 import FooterComponent from "@/components/layout/footer.component";
 import NextLink from "next/link";
-import NextImage from "next/image";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -32,21 +32,21 @@ const collections = [
     name: "Avalen Perumbodhai",
     author: "Poetu Bee",
     href: "https://www.amazon.com/%E0%AE%85%E0%AE%B5%E0%AE%B3%E0%AF%86%E0%AE%A9%E0%AF%8D-%E0%AE%AA%E0%AF%86%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%8B%E0%AE%A4%E0%AF%88-Tamil-Poetu-Bee-ebook/dp/B08MTP67RK/ref=sr_1_1?crid=3CUZENBZMSQSD&keywords=Poetu+bee&qid=1649098358&sprefix=poetu+be%2Caps%2C410&sr=8-1",
-    imageSrc: "Avalen.jpg",
+    imageSrc: "/Avalen.jpg",
     imageAlt: "Avalen Perumbodhai",
   },
   {
     name: "Theethum Nandrum",
     href: "#",
     author: "Sandhiya Natarajan",
-    imageSrc: "Theethum-Nanrum.jpg",
+    imageSrc: "/Theethum-Nanrum.jpg",
     imageAlt: "Theethum Nandrum",
   },
   {
     name: "Theernthuvittal",
     href: "https://www.amazon.com/%E0%AE%A4%E0%AF%80%E0%AE%B0%E0%AF%8D%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B5%E0%AE%BF%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BE%E0%AE%B3%E0%AF%8D-Tamil-Poetu-Bee-ebook/dp/B08T7V7PWG/ref=sr_1_2?crid=3CUZENBZMSQSD&keywords=Poetu+bee&qid=1649098358&sprefix=poetu+be%2Caps%2C410&sr=8-2",
     author: "Poetu Bee",
-    imageSrc: "Theernthuvittak.jpg",
+    imageSrc: "/Theernthuvittak.jpg",
     imageAlt: "Theernthuvittal",
   },
 ];
@@ -136,11 +136,11 @@ export default function Example() {
         >
           <div className="flex-1 relative w-full bg-gray-800">
             <div className="absolute inset-0 overflow-hidden">
-              <NextImage
+              {/* <Image
                 src="https://tailwindui.com/img/ecommerce-images/home-page-04-hero-full-width.jpg"
                 alt=""
                 className="w-full h-full object-center object-cover"
-              />
+              /> */}
             </div>
             <div className="absolute inset-0 bg-gray-900 opacity-50" />
           </div>
@@ -193,9 +193,10 @@ export default function Example() {
                     className="absolute inset-0 rounded-lg overflow-hidden"
                   >
                     <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
-                      <NextImage
+                      <Image
                         src={collection.imageSrc}
                         alt={collection.imageAlt}
+                        layout="fill"
                         className="w-full h-full object-center object-cover"
                       />
                     </div>
@@ -240,10 +241,12 @@ export default function Example() {
               >
                 <div className="md:flex-shrink-0">
                   <div className="flow-root">
-                    <NextImage
+                    <Image
                       className="-my-1 h-24 w-auto mx-auto"
                       src={perk.imageUrl}
                       alt=""
+                      width="100px"
+                      height="200px"
                     />
                   </div>
                 </div>
