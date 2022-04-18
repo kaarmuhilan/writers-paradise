@@ -165,7 +165,7 @@ export default function Example() {
             id="testimonial-heading"
             className="text-2xl font-extrabold tracking-tight text-gray-900"
           >
-            What are people saying?
+            What are people saying about Books?
           </h2>
 
           <div className="mt-16 space-y-16 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">

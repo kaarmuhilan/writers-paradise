@@ -2,20 +2,20 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      "My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!",
-    attribution: "Sarah Peters, New Orleans",
+      " “A reader lives a thousand lives before he dies . . . The man who never reads lives only one”",
+    attribution: "George R.R. Martin",
   },
   {
     id: 2,
     quote:
-      "I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!",
-    attribution: "Kelly McPherson, Chicago",
+      "“It wasn’t until I started reading and found books they wouldn’t let us read in school that I discovered you could be insane and happy and have a good life without being like everybody else.” ",
+    attribution: "John Waters",
   },
   {
     id: 3,
     quote:
-      "Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.",
-    attribution: "Chris Paul, Phoenix",
+      "“We don’t need a list of rights and wrongs, tables of dos and don’ts: We need books, time, and silence. Thou shalt not is soon forgotten, but Once upon a time lasts forever.”",
+    attribution: "Philip Pullman",
   },
 ];
 
