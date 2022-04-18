@@ -5,120 +5,12 @@ import HeaderComponent from "@/components/layout/header.component";
 import FooterComponent from "@/components/layout/footer.component";
 import NextLink from "next/link";
 import Image from "next/image";
-
-const testimonials = [
-  {
-    id: 1,
-    quote:
-      "My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!",
-    attribution: "Sarah Peters, New Orleans",
-  },
-  {
-    id: 2,
-    quote:
-      "I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!",
-    attribution: "Kelly McPherson, Chicago",
-  },
-  {
-    id: 3,
-    quote:
-      "Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.",
-    attribution: "Chris Paul, Phoenix",
-  },
-];
-
-const collections = [
-  {
-    name: "Avalen Perumbodhai",
-    author: "Poetu Bee",
-    href: "https://www.amazon.com/%E0%AE%85%E0%AE%B5%E0%AE%B3%E0%AF%86%E0%AE%A9%E0%AF%8D-%E0%AE%AA%E0%AF%86%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%8B%E0%AE%A4%E0%AF%88-Tamil-Poetu-Bee-ebook/dp/B08MTP67RK/ref=sr_1_1?crid=3CUZENBZMSQSD&keywords=Poetu+bee&qid=1649098358&sprefix=poetu+be%2Caps%2C410&sr=8-1",
-    imageSrc: "/Avalen.jpg",
-    imageAlt: "Avalen Perumbodhai",
-  },
-  {
-    name: "Theethum Nandrum",
-    href: "#",
-    author: "Sandhiya Natarajan",
-    imageSrc: "/Theethum-Nanrum.jpg",
-    imageAlt: "Theethum Nandrum",
-  },
-  {
-    name: "Theernthuvittal",
-    href: "https://www.amazon.com/%E0%AE%A4%E0%AF%80%E0%AE%B0%E0%AF%8D%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B5%E0%AE%BF%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BE%E0%AE%B3%E0%AF%8D-Tamil-Poetu-Bee-ebook/dp/B08T7V7PWG/ref=sr_1_2?crid=3CUZENBZMSQSD&keywords=Poetu+bee&qid=1649098358&sprefix=poetu+be%2Caps%2C410&sr=8-2",
-    author: "Poetu Bee",
-    imageSrc: "/Theernthuvittak.jpg",
-    imageAlt: "Theernthuvittal",
-  },
-];
-const trendingProducts = [
-  {
-    id: 1,
-    name: "Leather Long Wallet",
-    color: "Natural",
-    price: "$75",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-02.jpg",
-    imageAlt: "Hand stitched, orange leather long wallet.",
-  },
-  // More products...
-];
-const perks = [
-  {
-    name: "Publish E-Book",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-calendar-light.svg",
-    description:
-      "Get your e-book published with the most trusted online book stores like Amazon, Notion Press..etc",
-  },
-  {
-    name: "Publish Paperback",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-returns-light.svg",
-    description:
-      "Are you ready to publish a book, but not sure where to start? Learn how to publish a book with zero investment.",
-  },
-  {
-    name: "Magic of Editing",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-planet-light.svg",
-    description:
-      "Never edited a book before? Fear not - We've a set of highly qualified editors for do the job for you!",
-  },
-  {
-    name: "Get Paid",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-gift-card-light.svg",
-    description:
-      "Publishing done! And next? We provide the industry's highest author royalty. Sales notifications and reports within 34hrs.",
-  },
-];
-const footerNavigation = {
-  Books: [
-    // { name: "Books", href: "#" },
-    // { name: "Tees", href: "#" },
-    // { name: "Objects", href: "#" },
-    // { name: "Home Goods", href: "#" },
-    // { name: "Accessories", href: "#" },
-  ],
-  aboutUs: [
-    // { name: "About us", href: "#" },
-    // { name: "Sustainability", href: "#" },
-    // { name: "Press", href: "#" },
-    // { name: "Careers", href: "#" },
-    // { name: "Terms & Conditions", href: "#" },
-    // { name: "Privacy", href: "#" },
-  ],
-  contactUs: [
-    // { name: "Contact us", href: "#" },
-    // { name: "Shipping", href: "#" },
-    // { name: "Returns", href: "#" },
-    // { name: "Warranty", href: "#" },
-    // { name: "Secure Payments", href: "#" },
-    // { name: "FAQ", href: "#" },
-    // { name: "Find a store", href: "#" },
-  ],
-};
+import {
+  testimonials,
+  collections,
+  footerNavigation,
+  perks,
+} from "@/static/home.data";
 
 export default function Example() {
   // useEffect(() => {
@@ -136,11 +28,12 @@ export default function Example() {
         >
           <div className="flex-1 relative w-full bg-gray-800">
             <div className="absolute inset-0 overflow-hidden">
-              {/* <Image
-                src="https://tailwindui.com/img/ecommerce-images/home-page-04-hero-full-width.jpg"
+              <Image
+                src="/background.jpg"
                 alt=""
+                layout="fill"
                 className="w-full h-full object-center object-cover"
-              /> */}
+              />
             </div>
             <div className="absolute inset-0 bg-gray-900 opacity-50" />
           </div>

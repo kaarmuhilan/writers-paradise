@@ -49,7 +49,7 @@ const IndexPage: NextPage<Props> = ({}) => {
     <>
       <main className="max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">
-          Published Book Details
+          Published Books
         </h1>
 
         <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">

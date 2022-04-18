@@ -3,45 +3,46 @@ import { NextPage } from "next";
 import { CheckIcon } from "@heroicons/react/solid";
 import NextLink from "next/link";
 import Image from "next/image";
+import { steps } from "@/static/how-works.data";
 
 type Props = {};
-const steps = [
-  {
-    id: "01",
-    name: "Setup Account Basic Details",
-    description: "Vitae sed mi luctus laoreet.",
-    href: "#",
-    status: "complete",
-  },
-  {
-    id: "02",
-    name: "Fill Book Basic Information",
-    description: "Cursus semper viverra facilisis et et some more.",
-    href: "#",
-    status: "current",
-  },
-  {
-    id: "03",
-    name: "Distribution & Pricing",
-    description: "Penatibus eu quis ante.",
-    href: "#",
-    status: "upcoming",
-  },
-  {
-    id: "04",
-    name: "Book- Under Reviewing",
-    description: "Publishing book in reviewing status",
-    href: "#",
-    status: "upcoming",
-  },
-  {
-    id: "05",
-    name: "Done",
-    description: "Done",
-    href: "#",
-    status: "upcoming",
-  },
-];
+// const steps = [
+//   {
+//     id: "01",
+//     name: "Setup Account Basic Details",
+//     description: "Vitae sed mi luctus laoreet.",
+//     href: "#",
+//     status: "complete",
+//   },
+//   {
+//     id: "02",
+//     name: "Fill Book Basic Information",
+//     description: "Cursus semper viverra facilisis et et some more.",
+//     href: "#",
+//     status: "current",
+//   },
+//   {
+//     id: "03",
+//     name: "Distribution & Pricing",
+//     description: "Penatibus eu quis ante.",
+//     href: "#",
+//     status: "upcoming",
+//   },
+//   {
+//     id: "04",
+//     name: "Book- Under Reviewing",
+//     description: "Publishing book in reviewing status",
+//     href: "#",
+//     status: "upcoming",
+//   },
+//   {
+//     id: "05",
+//     name: "Done",
+//     description: "Done",
+//     href: "#",
+//     status: "upcoming",
+//   },
+// ];
 
 const IndexPage: NextPage<Props> = ({}) => {
   return (
@@ -97,7 +98,7 @@ const IndexPage: NextPage<Props> = ({}) => {
             </div>
 
             <div className="relative w-full md:w-4/6 lg:w-3/5">
-              <ol className="networklisted__decimal">
+              <ol className="networklisted__decimal list-bullet-items">
                 <li className="mb-12 md:mb-6">
                   <div className="networklisted__decimal--content max-w-xl">
                     <h3 className="font-inter text-lg font-medium mt-2">
@@ -119,6 +120,18 @@ const IndexPage: NextPage<Props> = ({}) => {
                       We have a straightforward online application process where
                       we'll ask you about your business so we can verify your
                       account and get you setup.
+                    </p>
+                  </div>
+                </li>
+                <li className="mb-12 md:mb-6">
+                  <div className="networklisted__decimal--content max-w-xl">
+                    <h3 className="font-inter text-lg font-medium mt-2">
+                      You're all setup
+                    </h3>
+                    <p className="mt-2 font-inter text-base font-normal text-gray-500">
+                      Once verified and approved, you'll be invited to access
+                      our online platform where you'll be able to start managing
+                      your students. All in one place.
                     </p>
                   </div>
                 </li>

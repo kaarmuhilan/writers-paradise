@@ -1,10 +1,10 @@
 type Props = {};
 const navigation = {
   main: [
+    { name: "Published Books", href: "/publications" },
     { name: "About Us", href: "/about-us" },
     { name: "Contact Us", href: "/contact-us" },
-    { name: "Our Books", href: "/publications" },
-    { name: "Partners", href: "#" },
+    { name: "FAQ", href: "/contact-us" },
   ],
   social: [
     // {
