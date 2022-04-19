@@ -30,8 +30,8 @@ const IndexPage: NextPage<Props> = ({}) => {
                     />
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <p>+1 (555) 123 4567</p>
-                    <p className="mt-1">Mon-Fri 8am to 6pm PST</p>
+                    <p>+91 9626166481</p>
+                    <p className="mt-1">Mon-Sun 8am to 6pm PST</p>
                   </div>
                 </div>
                 <div className="mt-6 flex">
@@ -71,7 +71,7 @@ const IndexPage: NextPage<Props> = ({}) => {
                     />
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <p>+1 (555) 123 4567</p>
+                    <p>+91 9842025958</p>
                     <p className="mt-1">Mon-Fri 8am to 6pm PST</p>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const IndexPage: NextPage<Props> = ({}) => {
           </div>
         </div>
       </div>
-      <div className="bg-white">
+      {/* <div className="bg-white">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <h2 className="inline text-3xl font-extrabold tracking-tight text-gray-900 sm:block sm:text-4xl">
             Want product news and updates?
@@ -126,7 +126,7 @@ const IndexPage: NextPage<Props> = ({}) => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
