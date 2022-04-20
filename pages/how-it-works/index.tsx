@@ -70,7 +70,7 @@ const IndexPage: NextPage<Props> = ({}) => {
                 mb-3
               "
                 >
-                  BECOME an introducer
+                  BECOME an Author
                 </h4>
                 <h2
                   className="
@@ -82,12 +82,11 @@ const IndexPage: NextPage<Props> = ({}) => {
                 mb-6
               "
                 >
-                  Join our network and help make education truely global.
+                  Join our publications and publish your books.
                 </h2>
                 <div className="max-w-xs lg:pr-8 sm:w-full">
                   <p className="font-inter text-base font-normal text-gray-500 mb-4">
-                    Join our network of over 1,000 recruitment partners and
-                    counting.
+                    Join our publications & Publish your book without investment
                   </p>
                   <p className="font-inter text-base font-normal text-gray-500">
                     Our onboarding process is simple and straightforward and our
@@ -102,7 +101,7 @@ const IndexPage: NextPage<Props> = ({}) => {
                 <li className="mb-12 md:mb-6">
                   <div className="networklisted__decimal--content max-w-xl">
                     <h3 className="font-inter text-lg font-medium mt-2">
-                      Get in touch
+                      Create a Account
                     </h3>
                     <p className="mt-2 font-inter text-base font-normal text-gray-500">
                       Submit your interest to get started and a member of our
@@ -114,7 +113,7 @@ const IndexPage: NextPage<Props> = ({}) => {
                 <li className="mb-12 md:mb-6">
                   <div className="networklisted__decimal--content max-w-xl">
                     <h3 className="font-inter text-lg font-medium mt-2">
-                      Apply and get verified
+                      Fill Basic Details
                     </h3>
                     <p className="mt-2 font-inter text-base font-normal text-gray-500">
                       We have a straightforward online application process where
@@ -126,7 +125,7 @@ const IndexPage: NextPage<Props> = ({}) => {
                 <li className="mb-12 md:mb-6">
                   <div className="networklisted__decimal--content max-w-xl">
                     <h3 className="font-inter text-lg font-medium mt-2">
-                      You're all setup
+                      Upload Your Documents
                     </h3>
                     <p className="mt-2 font-inter text-base font-normal text-gray-500">
                       Once verified and approved, you'll be invited to access
@@ -138,12 +137,22 @@ const IndexPage: NextPage<Props> = ({}) => {
                 <li className="mb-12 md:mb-6">
                   <div className="networklisted__decimal--content max-w-xl">
                     <h3 className="font-inter text-lg font-medium mt-2">
-                      You're all setup
+                      Under Reviewing Status
                     </h3>
                     <p className="mt-2 font-inter text-base font-normal text-gray-500">
-                      Once verified and approved, you'll be invited to access
-                      our online platform where you'll be able to start managing
-                      your students. All in one place.
+                      You've to upload your book documents for verification.
+                    </p>
+                  </div>
+                </li>
+                <li className="mb-12 md:mb-6">
+                  <div className="networklisted__decimal--content max-w-xl">
+                    <h3 className="font-inter text-lg font-medium mt-2">
+                      Done
+                    </h3>
+                    <p className="mt-2 font-inter text-base font-normal text-gray-500">
+                      Once your book document verified and approved, Your book
+                      comes to live and It will availabe for purchase in various
+                      platform like Amazon, Flipkart and Notion Press.
                     </p>
                   </div>
                 </li>
