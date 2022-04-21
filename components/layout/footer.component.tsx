@@ -69,8 +69,7 @@ const FooterComponent: React.FC<Props> = ({}) => {
           ))}
         </div>
         <p className="mt-8 text-center font-semibold text-base font-semibold tracking-wide">
-          &copy; {new Date().getFullYear()}'Writer's Paradise, Inc. All rights
-          reserved.
+          &copy; {new Date().getFullYear()}'Bookation, Inc. All rights reserved.
         </p>
       </div>
     </footer>

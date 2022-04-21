@@ -17,8 +17,8 @@ const IndexPage: NextPage<Props> = ({}) => {
               </h2>
               <div className="mt-3">
                 <p className="text-lg text-gray-500">
-                  Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                  volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                  For Sales nad Sales reported queries, you can contact below
+                  contact or mail your queries to below mail.
                 </p>
               </div>
               <div className="mt-9">
@@ -42,9 +42,9 @@ const IndexPage: NextPage<Props> = ({}) => {
                     />
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <NextLink href="https://mail.google.com/mail/?view=cm&source=mailto&to=thewritersparadise.official@gmail.com">
+                    <NextLink href="https://mail.google.com/mail/?view=cm&source=mailto&to=bookation.official@gmail.com">
                       <a rel="noreferrer" target="_blank">
-                        <p>thewritersparadise.official@gmail.com</p>
+                        <p>bookation.official@gmail.com</p>
                       </a>
                     </NextLink>
                   </div>
@@ -57,9 +57,8 @@ const IndexPage: NextPage<Props> = ({}) => {
               </h2>
               <div className="mt-3">
                 <p className="text-lg text-gray-500">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magni, repellat error corporis doloribus similique,
-                  voluptatibus numquam quam, quae officiis facilis.
+                  For Any Technical Assistance or Queries you can contact below
+                  number or mail your queries to below mail.
                 </p>
               </div>
               <div className="mt-9">
@@ -83,9 +82,9 @@ const IndexPage: NextPage<Props> = ({}) => {
                     />
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <NextLink href="https://mail.google.com/mail/?view=cm&source=mailto&to=thewritersparadise.official@gmail.com">
+                    <NextLink href="https://mail.google.com/mail/?view=cm&source=mailto&to=bookation.official@gmail.com">
                       <a rel="noreferrer" target="_blank">
-                        <p>thewritersparadise.official@gmail.com</p>
+                        <p>bookation.official@gmail.com</p>
                       </a>
                     </NextLink>
                   </div>

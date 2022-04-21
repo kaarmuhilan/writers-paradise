@@ -1,21 +1,19 @@
 export const testimonials = [
   {
     id: 1,
-    quote:
-      " “A reader lives a thousand lives before he dies . . . The man who never reads lives only one”",
-    attribution: "George R.R. Martin",
+    quote: "ஒரு நல்ல புத்தகம் திறந்து கொண்டால், நரகத்தின் வாசல் மூடப்படும்.",
+    attribution: "வைரமுத்து",
   },
   {
     id: 2,
     quote:
-      "“It wasn’t until I started reading and found books they wouldn’t let us read in school that I discovered you could be insane and happy and have a good life without being like everybody else.” ",
-    attribution: "John Waters",
+      "புத்தகம் இல்லாத வீடு, ஜன்னல் இல்லாத அறை போன்றது! எந்த வீட்டில் நூலகம் இருக்கிறதோ அந்த வீட்டில் ஆன்மா இருக்கிறது!",
+    attribution: "பிளேட்டோ",
   },
   {
     id: 3,
-    quote:
-      "“We don’t need a list of rights and wrongs, tables of dos and don’ts: We need books, time, and silence. Thou shalt not is soon forgotten, but Once upon a time lasts forever.”",
-    attribution: "Philip Pullman",
+    quote: "படித்தல் என்பது ஒரு சிறந்த வாழ்க்கையை வாழ்வதற்கான அடிப்படையாகும்!",
+    attribution: "ஜோசப் அடிசன்",
   },
 ];
 

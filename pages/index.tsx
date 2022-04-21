@@ -54,16 +54,8 @@ export default function Example() {
           </div>
           <div className="relative py-32">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
-              Writer's Paradise
+              Bookation
             </h1>
-            {/* <div className="mt-4 sm:mt-6">
-              <a
-                href="#"
-                className="inline-block bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700"
-              >
-                Publish Your Books
-              </a>
-            </div> */}
           </div>
         </div>
 
@@ -156,6 +148,34 @@ export default function Example() {
           </div>
         </div>
       </section>
+      <section>
+        <div className="relative">
+          <div className="sm:text-center">
+            <h2 className="text-3xl font-extrabold text-black tracking-tight sm:text-4xl">
+              Mission to unlock
+            </h2>
+            <p className="mt-6 mx-auto max-w-2xl text-lg text-grey-200">
+              We are on a mission to organize and digitize this huge unorganized
+              and manual salon & spa industry. Help our partners enjoy an
+              end-to-end SAAS platform to create long lasting, loyal clients &
+              display 5X performance!
+            </p>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="sm:text-center">
+            <h2 className="text-2xl font-extrabold text-black tracking-tight sm:text-4xl">
+              Milestone so far
+            </h2>
+            <p className="mt-6 mx-auto max-w-2xl text-lg text-grey-200">
+              We are on a mission to organize and digitize this huge unorganized
+              and manual salon & spa industry. Help our partners enjoy an
+              end-to-end SAAS platform to create long lasting, loyal clients &
+              display 5X performance!
+            </p>
+          </div>
+        </div>
+      </section>
       <section
         aria-labelledby="testimonial-heading"
         className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:py-32 lg:px-8"
@@ -165,7 +185,7 @@ export default function Example() {
             id="testimonial-heading"
             className="text-2xl font-extrabold tracking-tight text-gray-900"
           >
-            What are people saying about Books?
+            புத்தகம் பற்றி கவிஞர்களின் கருத்துக்கள்?
           </h2>
 
           <div className="mt-16 space-y-16 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
